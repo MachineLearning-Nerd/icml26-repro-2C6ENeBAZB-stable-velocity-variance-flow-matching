@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "openreview_id": "2C6ENeBAZB",
-  "phase": "claim_2_attempt_1_literal_benchmark_cpu_infeasible_inconclusive",
-  "next_action": "independent_review_claim_2_cpu_infeasibility_audit_then_claim_3_source_audit",
+  "phase": "claim_3_attempt_1_literal_sitxl_benchmark_cpu_infeasible_inconclusive",
+  "next_action": "independent_review_claim_3_cpu_infeasibility_audit_then_claim_4_source_audit",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
@@ -10,18 +10,19 @@
     "source_archive_and_pdf_pinned",
     "claim_1_source_cpu_feasibility_audit",
     "claim_1_attempt_1_self_normalized_target_fixture",
-    "claim_2_attempt_1_literal_imagenet_benchmark_cpu_infeasibility_audit"
+    "claim_2_attempt_1_literal_imagenet_benchmark_cpu_infeasibility_audit",
+    "claim_3_attempt_1_literal_sitxl_benchmark_cpu_infeasibility_audit"
   ],
   "failed_attempts": [],
   "claim_attempt_counts": {
     "1": 1,
     "2": 1,
-    "3": 0,
+    "3": 1,
     "4": 0,
     "5": 0,
     "6": 0
   },
-  "last_checkpoint": "2026-08-03T08:30:00Z",
+  "last_checkpoint": "2026-08-03T16:32:05+00:00",
   "last_known_git_commit": null,
   "publication_allowed": false,
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
@@ -44,6 +45,15 @@
       "evidence/claim2_attempt1/source_locations.md",
       "outputs/claim2_cpu_infeasibility/assessment.json",
       "outputs/claim2_cpu_infeasibility/SHA256SUMS"
+    ]
+  },
+  "claim_3_outcome": {
+    "verdict": "inconclusive",
+    "scope": "Literal SiT-XL/2 675M Table-2 FID reproduction at 100k/400k iterations is CPU-infeasible under local CPU/GTX-1050-only policy; no substitute executed.",
+    "evidence": [
+      "evidence/claim3_attempt1/source_locations.txt",
+      "outputs/claim3_cpu_infeasibility/assessment.json",
+      "outputs/claim3_cpu_infeasibility/SHA256SUMS"
     ]
   }
 }

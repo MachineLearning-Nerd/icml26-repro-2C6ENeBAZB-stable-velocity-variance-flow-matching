@@ -1,0 +1,42 @@
+   610	            \multicolumn{6}{l}{\textit{SiT-B/2}~(130M)}\\
+   611	            REPA &100k &52.06 &8.18 &26.8 &0.45 &0.59\\
+   612	            \rowcolor{highlight} \textbf{Ours} &100k &\textbf{49.69} &8.18 &\textbf{28.5} &\textbf{0.46} &\textbf{0.60}\\
+   613	            \midrule
+   614	            \multicolumn{5}{l}{\textit{SiT-L/2}~(458M)}\\
+   615	            REPA &100k &22.75 &5.52 &59.9 &0.61 &0.63\\
+   616	            \rowcolor{highlight} \textbf{Ours} &100k &\textbf{21.03} &\textbf{5.51} &\textbf{63.9} &\textbf{0.62} &0.63 \\
+   617	            \midrule
+   618	            \multicolumn{5}{l}{\textit{SiT-XL/2}~(675M)}\\
+   619	            REPA &100k & 18.59 & 5.39 & 70.6 & 0.64 & 0.62 \\
+   620	            \rowcolor{highlight} \textbf{Ours} &100k & \textbf{17.12} & 5.39 & \textbf{74.8} & \textbf{0.65} & \textbf{0.63} \\
+   621	            REPA &200k & 11.04 & \textbf{5.02} & 101.9 & 0.68 & 0.64 \\
+   622	            \rowcolor{highlight} \textbf{Ours} &200k & \textbf{10.56} & 5.03 & \textbf{105.4} & \textbf{0.69} & \textbf{0.64} \\
+   623	            REPA &400k & 8.13 & \textbf{5.01} & 124.5 & 0.69 & 0.66 \\
+   624	            \rowcolor{highlight} \textbf{Ours} &400k & \textbf{7.58} & 5.03 & \textbf{127.6} & \textbf{0.70} & \textbf{0.66} \\
+   625	            % REPA &800k & 6.94 & \textbf{5.17} & 137.9 & 0.70 & 0.68 \\
+   626	            % \rowcolor{highlight} \textbf{Ours} &800k & \textbf{6.75} & 5.18 & \textbf{139.0} & \textbf{0.70} & \textbf{0.68} \\
+   627	            \bottomrule
+   628	        \end{tabular}
+   629	    }
+   630	\end{table}
+   640	        \begin{tabular}{lccccc}
+   641	            \toprule
+   642	            \textbf{Methods} & \textbf{FID}$\downarrow$ & \textbf{sFID}$\downarrow$ & \textbf{IS}$\uparrow$ & \textbf{Prec.}$\uparrow$ & \textbf{Rec.}$\uparrow$ \\ 
+   643	            \midrule
+   644	            REPA & 18.59 & 5.39 & 70.6 & 0.64 & 0.62 \\
+   645	            \rowcolor{highlight} \textbf{+Ours} & \textbf{17.12} & 5.39 & \textbf{74.8} & \textbf{0.65} & \textbf{0.63}\\
+   646	            \midrule
+   647	            REG &8.90 &5.50 &125.3 &0.72 &0.59\\
+   648	            \rowcolor{highlight} \textbf{+Ours} &\textbf{8.11} &\textbf{5.34} &\textbf{128.8} &\textbf{0.74} &\textbf{0.60}  \\
+   649	            \midrule
+   650	            iREPA & 16.62 & 5.31 & 76.7 & 0.65 & 0.63 \\
+   651	            \rowcolor{highlight} \textbf{+Ours} & \textbf{16.02} & \textbf{5.30} & \textbf{78.6} & \textbf{0.66} & 0.63 \\
+   652	            \bottomrule
+   653	        \end{tabular}
+   654	    }
+   655	\end{table}
+   656	
+   657	\textbf{Ablation on Split Point $\xi$.} The split point $\xi$ defines the boundary between the \emph{low-variance regime} and the \emph{high-variance regime}, and determines the extent of representation alignment. Tab.~\ref{tab:split_point} analyzes the effect of different $\xi$ values at multiple training stages. At early training (100k iterations), a smaller split point ($\xi=0.6$) achieves the best FID, indicating that weaker alignment provides an easier supervisory signal that accelerates initial convergence. As training progresses, $\xi=0.7$ consistently yields the best overall performance, particularly at 400k iterations, where it delivers the best performance. In contrast, a larger split point ($\xi=0.8$) degrades performance, due to noisy supervision introduced from the high-variance regime. Based on these results, we adopt $\xi=0.7$ as the default setting.
+   658	
+   659	\begin{table}[t]
+   660	\centering
