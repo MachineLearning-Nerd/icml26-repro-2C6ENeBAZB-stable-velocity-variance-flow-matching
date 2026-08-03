@@ -1,0 +1,14 @@
+{
+  "claim": 2,
+  "verdict": "inconclusive",
+  "scope": "Literal Table-1 ImageNet-256 SiT-XL/2 CFG benchmark is infeasible under the local CPU/local GTX 1050-only policy; no benchmark run was attempted.",
+  "literal_requirements": {
+    "dataset": "ImageNet training split",
+    "model": "SiT-XL backbone latent diffusion transformer",
+    "training": "80 epochs",
+    "evaluation": "FID and IS over 50000 generated samples, 250-step Euler-Maruyama sampling",
+    "target_values": {"stablevm_fid": 1.80, "repa_fid": 1.98, "stablevm_is": 272.4, "repa_is": 263.0}
+  },
+  "local_resources": "CPU and GTX 1050 only; HF cpu-upgrade, Jobs, paid compute, and remote GPU are prohibited.",
+  "decision": "Do not represent source-table extraction or a reduced toy as verification/falsification of the benchmark claim."
+}
