@@ -1,0 +1,1 @@
+Pinned arXiv source `main.tex`, lines 294--323: composite GMM path and self-normalized StableVM target. Lines 329--369: claimed unbiasedness and variance discussion. This reduced fixture implements only the target formula in one Gaussian dimension.

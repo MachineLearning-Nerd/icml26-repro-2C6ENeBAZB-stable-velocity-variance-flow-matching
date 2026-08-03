@@ -1,0 +1,32 @@
+{
+  "openreview_id": "2C6ENeBAZB",
+  "claims": [
+    {
+      "text": "StableVM's variance-reduction training objective is proven unbiased and variance-reducing relative to standard conditional flow matching, with variance decaying at rate O(1/n) in the number of reference samples n (Theorem 3.1, Theorem 3.2, Theorem 3.3).",
+      "status": "unverified"
+    },
+    {
+      "text": "On ImageNet 256x256 with classifier-free guidance at 80 epochs, StableVM achieves an FID of 1.80 versus REPA's 1.98, and an Inception Score of 272.4 versus REPA's 263.0 (Table 1).",
+      "status": "unverified"
+    },
+    {
+      "text": "At the SiT-XL/2 scale, StableVM improves FID from REPA's 18.59 to 17.12 at 100k iterations and from 8.13 to 7.58 at 400k iterations (Table 2).",
+      "status": "unverified"
+    },
+    {
+      "text": "Stable Velocity Sampling (StableVS) with 9 low-variance-regime steps matches the quality of a 30-step baseline on T2V-CompBench with Wan2.2, achieving a PSNR of 31.10 versus 15.61 for a 20-step baseline (Table 5).",
+      "status": "unverified"
+    },
+    {
+      "text": "On the GenEval T2I benchmark with SD3.5-Large, StableVS achieves FID 0.723 using 9 low-variance steps within a 20-step total budget, close to the 13-step Euler baseline's 0.710, with an LPIPS of 0.021 versus 0.333 for the standard solver (Table 6, Section 3.3).",
+      "status": "unverified"
+    },
+    {
+      "text": "The optimal split point between low- and high-variance regimes is xi=0.7, yielding an FID of 7.58 at 400k iterations in the split-point ablation (Table 4).",
+      "status": "unverified"
+    }
+  ],
+  "claim_source": "claims_anchored.json",
+  "claim_count": 6,
+  "maximum_points": 12
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "openreview_id": "2C6ENeBAZB",
+  "phase": "claim_1_attempt_1_stablevm_target_toy_complete",
+  "next_action": "independent_review_claim_1_toy_against_literal_theorems_then_claim_2_cpu_infeasibility_audit",
+  "active_run_ids": [],
+  "completed_milestones": ["live_duplicate_gate", "live_contract_saved", "source_archive_and_pdf_pinned", "claim_1_source_cpu_feasibility_audit", "claim_1_attempt_1_self_normalized_target_fixture"],
+  "failed_attempts": [],
+  "claim_attempt_counts": {"1": 1, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0},
+  "last_checkpoint": "2026-08-03T04:30:41Z",
+  "last_known_git_commit": null,
+  "publication_allowed": false,
+  "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "selection_rationale": "Anchored six-claim contract; primary arXiv source available; Claim 1 self-normalized multi-reference target has a source-faithful one-dimensional CPU fixture. Image/video benchmark claims are explicitly deferred as non-CPU full reproductions.",
+  "claim_1_outcome": {"verdict":"toy", "scope":"Finite local one-dimensional Gaussian implementation of the StableVM self-normalized target with n=1..32. It is not evidence for Theorems 3.1--3.3 or ImageNet results.", "evidence":["outputs/claim1_stablevm_1d_toy/config.json","outputs/claim1_stablevm_1d_toy/results.csv","outputs/claim1_stablevm_1d_toy/summary.json","outputs/claim1_stablevm_1d_toy/SHA256SUMS","evidence/source/SHA256SUMS"]}
+}

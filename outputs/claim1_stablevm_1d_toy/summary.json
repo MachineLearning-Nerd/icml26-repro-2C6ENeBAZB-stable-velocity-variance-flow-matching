@@ -1,0 +1,39 @@
+{
+  "verdict": "toy",
+  "scope": "One-dimensional Gaussian CPU implementation of the paper self-normalized multi-reference target; it is not a proof of unbiasedness/O(1/n), nor ImageNet training.",
+  "rows": [
+    {
+      "n": 1,
+      "mean": -0.029965134189274746,
+      "sample_variance": 2.091817851204833
+    },
+    {
+      "n": 2,
+      "mean": -0.0008713611985049251,
+      "sample_variance": 1.1551069299121537
+    },
+    {
+      "n": 4,
+      "mean": -0.0006271971694527133,
+      "sample_variance": 0.6925733396918556
+    },
+    {
+      "n": 8,
+      "mean": 0.011695945993524371,
+      "sample_variance": 0.44210284583674986
+    },
+    {
+      "n": 16,
+      "mean": 0.010540128539295947,
+      "sample_variance": 0.3112759037690604
+    },
+    {
+      "n": 32,
+      "mean": -0.0023685588512992635,
+      "sample_variance": 0.22564727550298846
+    }
+  ],
+  "variance_n1": 2.091817851204833,
+  "variance_n32": 0.22564727550298846,
+  "decreases_n1_to_n32": true
+}

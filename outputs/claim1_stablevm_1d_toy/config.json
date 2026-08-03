@@ -1,0 +1,7 @@
+{
+  "seed": 20260803,
+  "trials": 4000,
+  "t": 0.65,
+  "path": "x_t=(1-t)x0+t epsilon",
+  "metric": "Monte-Carlo target variance; reduced diagnostic only"
+}
